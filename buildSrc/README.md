@@ -1,0 +1,1 @@
+Gradle libraries and plugins dependencies should be defined here. 
