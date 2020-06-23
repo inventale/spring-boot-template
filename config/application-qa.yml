@@ -1,0 +1,5 @@
+# QA properties
+
+spring:
+  main:
+    banner-mode: off

@@ -1,0 +1,1 @@
+This module contains only data model classes

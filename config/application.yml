@@ -1,0 +1,12 @@
+logging:
+  level:
+    ROOT: INFO
+    com.inventale: DEBUG
+
+# local profile should be last to override properties
+spring:
+  profiles:
+    active:
+    - dev
+    - local
+

@@ -1,0 +1,5 @@
+# Production properties
+
+spring:
+  main:
+    banner-mode: off

@@ -1,0 +1,31 @@
+image: docker.inventale.com/inv_docker/iq-docker:0.0.4
+
+stages:
+  - verify
+
+before_script:
+#  cache gradle for the branch
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .gradle/wrapper
+    - .gradle/caches
+
+# --------- Verify stage ---------
+tests:
+  stage: verify
+  script:
+    - ./gradlew clean test --build-cache --scan
+  except:
+    - schedules
+    - tags
+  artifacts:
+    expire_in: 2 weeks
+    when: always
+    name: "$CI_BUILD_ID"
+    paths:
+      - $CI_PROJECT_DIR/**/build/reports/*
+    reports:
+      junit: $CI_PROJECT_DIR/**/build/test-results/test/TEST-*.xml

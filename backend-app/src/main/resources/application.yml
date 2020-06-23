@@ -1,0 +1,14 @@
+server:
+  port: 8090
+
+#Metrics related configurations
+management:
+  #  See https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html, https://www.baeldung.com/spring-boot-actuators for details
+  endpoints.web.exposure.include: "*"
+  endpoint:
+    metrics.enabled: true
+    prometheus.enabled: true
+  metrics:
+    export.prometheus.enabled: true
+    tags:
+      environment: development

@@ -1,0 +1,1 @@
+Business logic without DI configuration, properties etc. 

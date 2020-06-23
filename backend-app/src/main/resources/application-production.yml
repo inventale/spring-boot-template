@@ -1,0 +1,10 @@
+backend:
+  hello-world-target: "Production"
+
+#Metrics related configurations
+management:
+  #  See https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-features.html, https://www.baeldung.com/spring-boot-actuators for details
+  endpoints.web.exposure.include: "health,info,loggers,heapdump,threaddump,prometheus,metrics"
+  metrics:
+    tags:
+      environment: production
