@@ -1,6 +1,8 @@
 package com.inventale.project;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -19,8 +21,11 @@ class HelloWorldServiceTest {
     @ParameterizedTest
     @MethodSource("provideData")
     void testHelloWorldService(String target) {
-        HelloWorldService helloWorldService = new HelloWorldService(target);
+        HelloWorldMessageProvider helloWorldMessageProvider = mock(HelloWorldMessageProvider.class);
+        when(helloWorldMessageProvider.getMessage()).thenReturn(target);
+
+        HelloWorldService helloWorldService = new HelloWorldService(helloWorldMessageProvider);
         HelloWorldResult actualResult = helloWorldService.getHelloWorld();
-        assertEquals(new HelloWorldResult("Hello world, " + target), actualResult);
+        assertEquals(new HelloWorldResult(target), actualResult);
     }
 }

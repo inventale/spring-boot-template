@@ -1,13 +1,13 @@
 package com.inventale.project;
 
 public class HelloWorldService {
-    private final String helloWorldTarget;
+    private final HelloWorldMessageProvider helloWorldMessageProvider;
 
-    public HelloWorldService(String helloWorldTarget) {
-        this.helloWorldTarget = helloWorldTarget;
+    public HelloWorldService(HelloWorldMessageProvider helloWorldMessageProvider) {
+        this.helloWorldMessageProvider = helloWorldMessageProvider;
     }
 
     public HelloWorldResult getHelloWorld() {
-        return new HelloWorldResult("Hello world, " + helloWorldTarget);
+        return new HelloWorldResult(helloWorldMessageProvider.getMessage());
     }
 }
