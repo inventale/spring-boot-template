@@ -1,4 +1,4 @@
-image: docker.inventale.com/platform/build/jdk11:1.0.1
+image: docker.inventale.com/platform/build/jdk/jdk11:1.1.0
 
 stages:
   - verify
