@@ -1,4 +1,4 @@
-image: docker.inventale.com/inv_docker/iq-docker:0.0.4
+image: docker.inventale.com/platform/build/jdk11:1.0.1
 
 stages:
   - verify
@@ -8,7 +8,7 @@ before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
 cache:
-  key: ${CI_COMMIT_REF_SLUG}
+  key: one-key-to-rule-them-all
   paths:
     - .gradle/wrapper
     - .gradle/caches

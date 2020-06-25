@@ -32,6 +32,8 @@ fun isNonStable(version: String): Boolean {
     return isStable.not()
 }
 
+
+// You can see all outdated dependencies using the command `./gradlew dependencyUpdates`
 tasks {
     named<DependencyUpdatesTask>("dependencyUpdates") {
         resolutionStrategy {

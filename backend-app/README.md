@@ -1,5 +1,7 @@
 This module contains Spring Dependency Injection configuration and Web endpoints.
 The main idea is not to mix business logic (see backend module) and DI configuration.
+It allows migrating to new service frameworks like DI container or Web service without changing a business logic.
+Moreover, it simplifies potential dependencies between non-application modules. 
  
 ***HelloWorldAppAcceptanceTest*** 
 
