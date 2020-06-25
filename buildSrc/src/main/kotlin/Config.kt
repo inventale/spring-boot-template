@@ -20,6 +20,7 @@ object Versions {
 object Plugins {
     const val springBoot = "org.springframework.boot"
     const val versions = "com.github.ben-manes.versions"
+    const val swagger = "io.swagger.core.v3.swagger-gradle-plugin"
 }
 
 object Libs {

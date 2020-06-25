@@ -8,7 +8,7 @@ before_script:
   - export GRADLE_USER_HOME=`pwd`/.gradle
 
 cache:
-  key: one-key-to-rule-them-all
+  key: your-project-one-key-to-rule-them-all
   paths:
     - .gradle/wrapper
     - .gradle/caches
