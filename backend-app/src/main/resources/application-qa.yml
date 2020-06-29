@@ -1,0 +1,8 @@
+backend:
+  hello-world-target: "QA"
+
+#Metrics related configurations
+management:
+  metrics:
+    tags:
+      environment: qa

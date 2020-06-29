@@ -33,5 +33,5 @@ out/
 infrastructure/
 create-jmeter-instance.yaml
 
-config/application-local.yml.template
+config/application-local.yml
 logs
