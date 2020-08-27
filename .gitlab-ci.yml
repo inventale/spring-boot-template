@@ -29,3 +29,19 @@ tests:
       - $CI_PROJECT_DIR/**/build/reports/*
     reports:
       junit: $CI_PROJECT_DIR/**/build/test-results/test/TEST-*.xml
+
+owasp:
+  stage: verify
+  script:
+    - ./gradlew dependencyCheckAnalyze
+  except:
+    - schedules
+    - tags
+  artifacts:
+    expire_in: 2 weeks
+    when: always
+    name: "$CI_BUILD_ID"
+    paths:
+      - $CI_PROJECT_DIR/**/build/reports/*
+    reports:
+      junit: $CI_PROJECT_DIR/**/build/test-results/test/TEST-*.xml
