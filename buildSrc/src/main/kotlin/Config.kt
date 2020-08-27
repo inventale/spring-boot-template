@@ -1,6 +1,7 @@
 object Versions {
     //Plugins
     const val versionsPlugin = "0.28.0"
+    const val owaspPlugin = "5.3.2.1"
 
     //Libs
     const val springBoot = "2.3.1.RELEASE"
@@ -21,6 +22,7 @@ object Plugins {
     const val springBoot = "org.springframework.boot"
     const val versions = "com.github.ben-manes.versions"
     const val swagger = "io.swagger.core.v3.swagger-gradle-plugin"
+    const val owasp = "org.owasp.dependencycheck"
 }
 
 object Libs {
