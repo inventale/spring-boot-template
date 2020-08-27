@@ -10,6 +10,8 @@ public class DefaultHelloWorldMessageProvider implements HelloWorldMessageProvid
         this.helloWorldTarget = helloWorldTarget;
     }
 
+    // extra tags need to split time series to separate implementations:
+    // default and dev message length will be stored in separate time series
     @Override
     @Timed(value = PrometheusMetrics.HELLO_WORLD_PROVIDER_TIMED, extraTags = {"implementation", "default"})
     public String getMessage() {
