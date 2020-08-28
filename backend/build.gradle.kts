@@ -9,6 +9,8 @@ dependencies {
     compileOnly(Libs.lombok)
 
     api(project(":common"))
+    api(Libs.micrometerCore)
+    api(Libs.micrometerPrometheus)
 
     testImplementation(Libs.junit)
     testImplementation(Libs.junitEngine)

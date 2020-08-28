@@ -17,6 +17,7 @@ dependencies {
 
     implementation(Libs.springBootStarterActuator)
     implementation(Libs.springBootStarterWeb)
+    implementation(Libs.springBootStarterAop)
     implementation(Libs.gson)
 
     testAnnotationProcessor(Libs.lombok)
