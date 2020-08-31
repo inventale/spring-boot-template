@@ -30,6 +30,9 @@ dependencies {
 }
 
 tasks.test {
+    onlyIf {
+        project.hasProperty("functionalTests")
+    }
     useJUnitPlatform()
     // to use properties from /config in tests
     workingDir = rootDir

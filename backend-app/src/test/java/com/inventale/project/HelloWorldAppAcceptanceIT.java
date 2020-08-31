@@ -26,7 +26,7 @@ import java.net.URL;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 // list of used spring profiles. Las profiles override properties from previous ones
 @ActiveProfiles(profiles = {"test"})
-public class HelloWorldAppAcceptanceTest {
+public class HelloWorldAppAcceptanceIT {
     public static final String BASE_URL = "http://localhost:%s";
 
     // bind the above RANDOM_PORT

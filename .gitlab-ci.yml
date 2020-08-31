@@ -30,6 +30,22 @@ tests:
     reports:
       junit: $CI_PROJECT_DIR/**/build/test-results/test/TEST-*.xml
 
+it:
+  stage: verify
+  script:
+    - ./gradlew -PfunctionalTests=true check
+  artifacts:
+    expire_in: 2 weeks
+    when: always
+    name: "$CI_BUILD_ID"
+    paths:
+      - $CI_PROJECT_DIR/**/build/*
+    reports:
+      junit: $CI_PROJECT_DIR/**/build/test-results/test/TEST-*.xml
+  only:
+    variables:
+      - $RUN_IT
+
 owasp:
   stage: verify
   script:
