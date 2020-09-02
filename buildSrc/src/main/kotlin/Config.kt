@@ -2,6 +2,7 @@ object Versions {
     //Plugins
     const val versionsPlugin = "0.28.0"
     const val owaspPlugin = "5.3.2.1"
+    const val taskTreePlugin = "1.5"
 
     //Libs
     const val springBoot = "2.3.1.RELEASE"
@@ -23,6 +24,7 @@ object Plugins {
     const val versions = "com.github.ben-manes.versions"
     const val swagger = "io.swagger.core.v3.swagger-gradle-plugin"
     const val owasp = "org.owasp.dependencycheck"
+    const val taskTree = "com.dorongold.task-tree"
 }
 
 object Libs {

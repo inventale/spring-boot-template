@@ -4,6 +4,7 @@ import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 plugins {
     id(Plugins.versions) version Versions.versionsPlugin
     id(Plugins.owasp) version Versions.owaspPlugin
+    id(Plugins.taskTree) version Versions.taskTreePlugin
 }
 
 allprojects {
