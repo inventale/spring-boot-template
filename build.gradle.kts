@@ -5,6 +5,12 @@ plugins {
     id(Plugins.versions) version Versions.versionsPlugin
     id(Plugins.owasp) version Versions.owaspPlugin
     id(Plugins.taskTree) version Versions.taskTreePlugin
+    pmd
+}
+
+pmd {
+    isConsoleOutput = true
+    toolVersion = "6.28.0"
 }
 
 allprojects {

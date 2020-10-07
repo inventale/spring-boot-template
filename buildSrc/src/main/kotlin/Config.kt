@@ -3,6 +3,7 @@ object Versions {
     const val versionsPlugin = "0.28.0"
     const val owaspPlugin = "5.3.2.1"
     const val taskTreePlugin = "1.5"
+    const val pmdToolPlugin = "6.21.0"
 
     //Libs
     const val springBoot = "2.3.1.RELEASE"
