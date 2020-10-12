@@ -31,13 +31,13 @@ public class HelloWorldAppAcceptanceIT {
 
     // bind the above RANDOM_PORT
     @LocalServerPort
-    protected int port;
+    protected transient int port;
     // to check Http endpoint
     @Autowired
-    protected TestRestTemplate restTemplate;
+    protected transient TestRestTemplate restTemplate;
     // to parse response
     @Autowired
-    protected Gson gson;
+    protected transient Gson gson;
 
     @Test
     public void request() {

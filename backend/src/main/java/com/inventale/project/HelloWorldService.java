@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class HelloWorldService {
     private static final AtomicInteger LAST_MESSAGE_LETTERS = new AtomicInteger(0);
 
-    private final HelloWorldMessageProvider helloWorldMessageProvider;
+    private final transient HelloWorldMessageProvider helloWorldMessageProvider;
 
     public HelloWorldService(HelloWorldMessageProvider helloWorldMessageProvider) {
         this.helloWorldMessageProvider = helloWorldMessageProvider;
