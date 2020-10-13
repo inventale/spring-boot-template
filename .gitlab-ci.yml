@@ -17,7 +17,7 @@ cache:
 tests:
   stage: verify
   script:
-    - ./gradlew clean test --build-cache --scan
+    - ./gradlew clean test check --build-cache --scan
   except:
     - schedules
     - tags

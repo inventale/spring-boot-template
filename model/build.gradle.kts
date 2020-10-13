@@ -1,5 +1,6 @@
 plugins {
     `java-library`
+    pmd
 }
 
 group = "com.inventale.project"

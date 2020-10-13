@@ -4,7 +4,7 @@ import com.inventale.project.metrics.PrometheusMetrics;
 import io.micrometer.core.annotation.Timed;
 
 public class DefaultHelloWorldMessageProvider implements HelloWorldMessageProvider {
-    private final String helloWorldTarget;
+    private final transient String helloWorldTarget;
 
     public DefaultHelloWorldMessageProvider(String helloWorldTarget) {
         this.helloWorldTarget = helloWorldTarget;

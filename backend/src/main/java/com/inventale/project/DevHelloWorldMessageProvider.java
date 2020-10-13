@@ -6,7 +6,7 @@ import io.micrometer.core.annotation.Timed;
 import java.time.Instant;
 
 public class DevHelloWorldMessageProvider implements HelloWorldMessageProvider {
-    private final String helloWorldTarget;
+    private final transient String helloWorldTarget;
 
     public DevHelloWorldMessageProvider(String helloWorldTarget) {
         this.helloWorldTarget = helloWorldTarget;

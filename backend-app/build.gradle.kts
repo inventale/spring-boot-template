@@ -1,5 +1,6 @@
 plugins {
     java
+    pmd
     id(Plugins.springBoot) version Versions.springBoot
 }
 

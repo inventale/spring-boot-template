@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 //@Timed annotation is used for [prometheus] metrics gathering
 @Timed
 public class HelloWorldController {
-    private final HelloWorldService helloWorldService;
+    private final transient HelloWorldService helloWorldService;
 
     @Autowired
     public HelloWorldController(HelloWorldService helloWorldService) {
