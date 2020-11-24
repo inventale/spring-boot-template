@@ -1,3 +1,8 @@
+spring:
+  profiles:
+    include:
+      - "json-logs"
+
 backend:
   hello-world-target: "Production"
 
