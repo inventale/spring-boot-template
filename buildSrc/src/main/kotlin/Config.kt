@@ -11,9 +11,14 @@ object Versions {
     const val trove = "3.0.3"
     const val guava = "29.0-jre"
     const val gson = "2.8.6"
-    const val slf4j = "1.7.30"
+
     const val javaxAnnotation = "1.3.2"
     const val micrometer = "1.4.1"
+
+    // logs
+    const val slf4j = "1.7.30"
+    const val logbackClassic = "1.2.3"
+    const val logstashLogbackEncoder = "6.3"
 
     // Libs for testing
     const val junit = "5.6.2"
@@ -38,11 +43,17 @@ object Libs {
     const val guava = "com.google.guava:guava:${Versions.guava}"
     const val trove = "net.sf.trove4j:trove4j:${Versions.trove}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
-    const val slf4j = "org.slf4j:slf4j-api:${Versions.slf4j}"
     const val javaxAnnotation = "javax.annotation:javax.annotation-api:${Versions.javaxAnnotation}"
     // metrics
     const val micrometerPrometheus = "io.micrometer:micrometer-registry-prometheus:${Versions.micrometer}"
     const val micrometerCore = "io.micrometer:micrometer-core:${Versions.micrometer}"
+
+    // logs
+    const val slf4j = "org.slf4j:slf4j-api:${Versions.slf4j}"
+    const val logstashLogbackEncoder = "net.logstash.logback:logstash-logback-encoder:${Versions.logstashLogbackEncoder}"
+    const val logbackClassic = "ch.qos.logback:logback-classic:${Versions.logbackClassic}"
+    const val logbackCore = "ch.qos.logback:logback-core:${Versions.logbackClassic}"
+    const val logbackAccess = "ch.qos.logback:logback-access:${Versions.logbackClassic}"
 
     // Test libraries
     const val junit = "org.junit.jupiter:junit-jupiter-api:${Versions.junit}"
