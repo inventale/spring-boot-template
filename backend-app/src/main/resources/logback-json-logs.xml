@@ -12,7 +12,7 @@
         </encoder>
     </appender>
     <appender name="MAIN_LOG_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>logs/data-lake-sender-app.log</file>
+        <file>logs/backend-app.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <FileNamePattern>logs/backend-app.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
             <maxHistory>30</maxHistory>
