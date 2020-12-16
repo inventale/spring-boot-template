@@ -18,6 +18,7 @@ dependencies {
 
     implementation(Libs.springBootStarterActuator)
     implementation(Libs.springBootStarterWeb)
+    implementation(Libs.springBootStarterCloudAwsAop)
     implementation(Libs.springBootStarterAop)
     implementation(Libs.gson)
 

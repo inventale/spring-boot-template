@@ -12,3 +12,11 @@ management:
     export.prometheus.enabled: true
     tags:
       environment: development
+    export.cloudwatch:
+      enabled: true
+      namespace: spring-boot-template
+
+cloud:
+  aws:
+    stack:
+      auto: false

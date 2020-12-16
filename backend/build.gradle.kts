@@ -11,6 +11,7 @@ dependencies {
 
     api(project(":common"))
     api(Libs.micrometerCore)
+    api(Libs.micrometerCloudwatch)
     api(Libs.micrometerPrometheus)
 
     testImplementation(Libs.junit)

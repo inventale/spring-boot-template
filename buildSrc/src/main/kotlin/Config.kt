@@ -7,6 +7,7 @@ object Versions {
 
     //Libs
     const val springBoot = "2.3.1.RELEASE"
+    const val springCloudAws = "2.2.5.RELEASE"
     const val lombok = "1.18.12"
     const val trove = "3.0.3"
     const val guava = "29.0-jre"
@@ -38,6 +39,7 @@ object Libs {
     const val springBootStarterLogging = "org.springframework.boot:spring-boot-starter-logging"
     const val springBootStarterWeb = "org.springframework.boot:spring-boot-starter-web:${Versions.springBoot}"
     const val springBootStarterAop = "org.springframework.boot:spring-boot-starter-aop:${Versions.springBoot}"
+    const val springBootStarterCloudAwsAop = "org.springframework.cloud:spring-cloud-starter-aws:${Versions.springCloudAws}"
     const val springBootStarterTest = "org.springframework.boot:spring-boot-starter-test:${Versions.springBoot}"
     const val lombok = "org.projectlombok:lombok:${Versions.lombok}"
     const val guava = "com.google.guava:guava:${Versions.guava}"
@@ -47,6 +49,7 @@ object Libs {
     // metrics
     const val micrometerPrometheus = "io.micrometer:micrometer-registry-prometheus:${Versions.micrometer}"
     const val micrometerCore = "io.micrometer:micrometer-core:${Versions.micrometer}"
+    const val micrometerCloudwatch = "io.micrometer:micrometer-registry-cloudwatch:${Versions.micrometer}"
 
     // logs
     const val slf4j = "org.slf4j:slf4j-api:${Versions.slf4j}"
