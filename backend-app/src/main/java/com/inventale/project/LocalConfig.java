@@ -11,6 +11,6 @@ import org.springframework.context.annotation.Profile;
 @EnableAutoConfiguration(
         // disable cloud auto-configurations for local profiles
         exclude = {ContextInstanceDataAutoConfiguration.class, ContextRegionProviderAutoConfiguration.class})
-@Profile (ProfileNames.LOCAL)
+@Profile(ProfileNames.LOCAL)
 public class LocalConfig {
 }
