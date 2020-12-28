@@ -13,3 +13,6 @@ management:
   metrics:
     tags:
       environment: production
+    export.cloudwatch:
+      enabled: true
+      namespace: spring-boot-template
