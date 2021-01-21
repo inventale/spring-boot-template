@@ -39,7 +39,7 @@ object Libs {
     const val springBootStarterLogging = "org.springframework.boot:spring-boot-starter-logging"
     const val springBootStarterWeb = "org.springframework.boot:spring-boot-starter-web:${Versions.springBoot}"
     const val springBootStarterAop = "org.springframework.boot:spring-boot-starter-aop:${Versions.springBoot}"
-    const val springBootStarterCloudAwsAop = "org.springframework.cloud:spring-cloud-starter-aws:${Versions.springCloudAws}"
+    const val springBootStarterCloudAws = "org.springframework.cloud:spring-cloud-starter-aws:${Versions.springCloudAws}"
     const val springBootStarterTest = "org.springframework.boot:spring-boot-starter-test:${Versions.springBoot}"
     const val lombok = "org.projectlombok:lombok:${Versions.lombok}"
     const val guava = "com.google.guava:guava:${Versions.guava}"
