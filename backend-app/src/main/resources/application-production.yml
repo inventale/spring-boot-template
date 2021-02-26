@@ -16,3 +16,8 @@ management:
     export.cloudwatch:
       enabled: true
       namespace: spring-boot-template
+
+# https://github.com/zalando/logbook
+logbook:
+  strategy: status-at-least
+  minimum-status: 400

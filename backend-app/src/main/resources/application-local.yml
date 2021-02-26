@@ -2,3 +2,8 @@ cloud:
   aws:
     stack:
       auto: false
+
+# https://github.com/zalando/logbook
+logbook:
+  format:
+    style: http

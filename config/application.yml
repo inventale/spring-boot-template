@@ -9,4 +9,3 @@ spring:
     active:
     - dev
     - local
-

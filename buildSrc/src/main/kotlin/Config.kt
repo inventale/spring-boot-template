@@ -19,6 +19,7 @@ object Versions {
     // logs
     const val slf4j = "1.7.30"
     const val logstashLogbackEncoder = "6.5"
+    const val logbook = "2.4.1"
 
     // Libs for testing
     const val junit = "5.7.0"
@@ -54,6 +55,8 @@ object Libs {
     // logs
     const val slf4j = "org.slf4j:slf4j-api:${Versions.slf4j}"
     const val logstashLogbackEncoder = "net.logstash.logback:logstash-logback-encoder:${Versions.logstashLogbackEncoder}"
+    const val logbookLogstash = "org.zalando:logbook-logstash:${Versions.logbook}"
+    const val logbookSpringBootStarter = "org.zalando:logbook-spring-boot-starter:${Versions.logbook}"
 
     // Test libraries
     const val junit = "org.junit.jupiter:junit-jupiter-api:${Versions.junit}"

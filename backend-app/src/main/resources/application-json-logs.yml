@@ -1,2 +1,6 @@
 logging:
   config: "classpath:logback-json-logs.xml"
+
+logbook:
+  format:
+    style: json

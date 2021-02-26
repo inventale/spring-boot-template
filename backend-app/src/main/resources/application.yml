@@ -12,3 +12,26 @@ management:
     export.prometheus.enabled: true
     tags:
       environment: development
+
+logging:
+  level:
+    org.zalando.logbook: TRACE
+
+# https://github.com/zalando/logbook
+logbook:
+  exclude:
+    - "/actuator/**"
+    - "/swagger-ui/**"
+    - "/api-docs/**"
+  filter.enabled: true
+  secure-filter.enabled: true
+  obfuscate:
+    headers:
+      - Token
+    parameters:
+      - password
+      - authCode
+  write:
+    max-body-size: 1000
+  format:
+    style: http
