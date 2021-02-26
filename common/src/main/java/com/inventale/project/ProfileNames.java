@@ -13,4 +13,7 @@ public final class ProfileNames {
     public static final String QA = "qa";
     public static final String DEV = "dev";
     public static final String PRODUCTION = "production";
+
+    //logging
+    public static final String JSON_LOGS = "json-logs";
 }

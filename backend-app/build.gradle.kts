@@ -25,6 +25,9 @@ dependencies {
     // put app logs in json format
     implementation(Libs.springBootStarterLogging)
     implementation(Libs.logstashLogbackEncoder)
+    // log request/responses
+    implementation(Libs.logbookLogstash)
+    implementation(Libs.logbookSpringBootStarter)
 
     testAnnotationProcessor(Libs.lombok)
     testImplementation(Libs.lombok)
